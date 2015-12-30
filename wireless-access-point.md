@@ -58,21 +58,29 @@ source-directory /etc/network/interfaces.d
 auto lo
 iface lo inet loopback
 
-#eth0 to have no IP at all
-#(unfortunately still makes dhcp request unless dhcpc$
+# eth0 to have no IP at all
 auto eth0
 iface eth0 inet manual
 
-#wlan0 not required for bridge
+# wlan0 not required for bridge
 
-#bridge
+# bridge
 auto br0
+# Use this line if you're happy to run it on DHCP
+iface br0 inet dhcp
+
+# Uncomment the following lines if you want a static IP. If you do this then
+# you will probably also want to add
+# denyinterfaces *
+# to the end of /etc/dhcpcd.conf
 #iface br0 inet static
 #address 192.168.0.4
-iface br0 inet dhcp
+
 netmask 255.255.255.0
 gateway 192.168.0.1
 bridge_ports eth0 wlan0
 ```
+## 
+
 # Reboot
 sudo reboot
