@@ -1,9 +1,9 @@
 # Setting up a DHCP / DNS server
 This is a simple DHCP and DNS server using dnsmasq. This allows you to reliably name your
-local network machines as well taking control of DHCP from your router. You may want to do
-this for a variety of reasons - whether just for the hell of it or because your ISP keeps
-resetting your router - or because your ISP has crappy and unreliable DNS servers. This
-fixes all of that.
+local network machines as well taking away control of DHCP from your router. You may want 
+to do this for a variety of reasons - whether just for the hell of it or because your ISP 
+keeps resetting your router - or because your ISP has crappy and unreliable DNS servers. 
+This fixes all of that.
 
 ## Update packages and install dnsmasq
 ```
