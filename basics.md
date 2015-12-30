@@ -1,6 +1,7 @@
 # Basics
 This outlines various common tasks which all rely on your having terminal access to your pi.
 If you don't have that then go and download PuTTY or something similar and then come back.
+If you've just got your Pi out of the box and vaguely know about linux then start here.
 
 ## Inital login
 Default username and password for raspbian are:
