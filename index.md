@@ -4,3 +4,4 @@
 2. [SMB client](smb-client.md)
 3. [Wireless access point](wireless-access-point.md)
 4. [DHCP / DNS server](dhcp-dns-server.md)
+5. [SANE Scanner Server](scanner-server.md)

@@ -1,4 +1,11 @@
 # Setting up a wireless access point
+These instructions create a simple wireless access point. It creates a bridge between
+your ethernet (eth0) and wireless (wlan0) which means that the wireless clients will
+be on the same network and using the same DHCP / DNS server as everything else.
+
+There are alternatives which create a separate network and rely on another DHCP server
+and NAT - but I think they're a bit over the top. See here if that sort of thing excites
+you: https://learn.adafruit.com/setting-up-a-raspberry-pi-as-a-wifi-access-point/
 
 ## Update system
 ```
@@ -20,7 +27,9 @@ sudo nano /etc/hostapd/hostapd.conf
 And replace its contents (if there are any) with this...
 ```
 interface=wlan0
+# You will need to change your driver to the correct one
 driver=nl80211
+# And your SSID
 ssid=your_ssid
 hw_mode=g
 channel=6
@@ -28,6 +37,7 @@ macaddr_acl=0
 auth_algs=1
 ignore_broadcast_ssid=0
 wpa=2
+# And password
 wpa_passphrase=your_password
 wpa_key_mgmt=WPA-PSK
 wpa_pairwise=TKIP
