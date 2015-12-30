@@ -126,7 +126,9 @@ search your_domain.com
 192.168.0.2	pi
 ```
 ## Service control commands
+```
 sudo systemctl status dnsmasq.service
 sudo systemctl stop dnsmasq.service
 sudo systemctl start dnsmasq.service
 sudo systemctl restart dnsmasq.service
+```
