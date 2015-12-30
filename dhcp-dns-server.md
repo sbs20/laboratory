@@ -64,7 +64,7 @@ domain-needed
 bogus-priv
 
 # Change this line if you want dns to get its upstream servers from
-# somewhere other that /etc/resolv.conf
+# somewhere other than /etc/resolv.conf
 resolv-file=/etc/dnsmasq-resolv.conf
 
 # Add local-only domains here, queries in these domains are answered
