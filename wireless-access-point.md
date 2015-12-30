@@ -14,7 +14,10 @@ sudo apt-get install bridge-utils
 sudo ifdown wlan0
 ```
 ## Edit the access point daemon config
+```
 sudo nano /etc/hostapd/hostapd.conf
+```
+And replace its contents (if there are any) with this...
 ```
 interface=wlan0
 driver=nl80211
@@ -37,7 +40,7 @@ We need to set it up to point to our config file ...
 ```
 sudo nano /etc/default/hostapd
 ```
-... incommenting this line ...
+... uncommenting this line ...
 ```
 DAEMON_CONF="/etc/hostapd/hostapd.conf"
 ```

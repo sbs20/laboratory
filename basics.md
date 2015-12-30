@@ -6,7 +6,6 @@ Default username and password for raspbian are:
 username: pi
 password: raspberry
 ```
-
 ## Reboot
 sudo reboot
 
@@ -39,4 +38,8 @@ ifconfig
 ### IP addresses
 ```
 ip addr show eth0
+```
+## Updating packages
+```
+sudo apt-get update
 ```
