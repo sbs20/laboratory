@@ -26,8 +26,6 @@ and replace it with:
 Then, scroll further down in the config file until you see the 
 location sections. Add the "Allow @local" lines:
     
-See [here](https://bugs.launchpad.net/ubuntu/+source/cups/+bug/516018) for more details 
-
     <Location / >
         # Restrict access to the server...
         Order allow,deny
@@ -53,6 +51,8 @@ To fix certain cases of Bad Request then also add
 
     ServerAlias *
 
+See [here](https://bugs.launchpad.net/ubuntu/+source/cups/+bug/516018) for more details 
+
 ## Add your printer
 Navigate to http://{ip-address}:631 - and follow your nose. I am using an old Canon iP90. 
 In spite of there being a Canon PIXMA iP90 listed, I found that it didn't work and I had 
@@ -69,4 +69,6 @@ to make windows play ball with nameservers
  * [http://blog.pi3g.com/2013/08/using-the-raspberry-pi-as-cups-print-server-for-windows-and-apple-mac-airprint/]
  * [http://www.howtogeek.com/169679/how-to-add-a-printer-to-your-raspberry-pi-or-other-linux-computer/]
  * [https://wiki.archlinux.org/index.php/CUPS/Printer_sharing#Linux_server_-_Windows_client]
+ * [https://bugs.launchpad.net/ubuntu/+source/cups/+bug/516018] 
+
 
