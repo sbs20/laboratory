@@ -4,9 +4,9 @@ If you want to access the CUPS web console using a name rather than IP address t
 ServerAlias reference below.
 
 References
-    http://blog.pi3g.com/2013/08/using-the-raspberry-pi-as-cups-print-server-for-windows-and-apple-mac-airprint/
-    http://www.howtogeek.com/169679/how-to-add-a-printer-to-your-raspberry-pi-or-other-linux-computer/
-    https://wiki.archlinux.org/index.php/CUPS/Printer_sharing#Linux_server_-_Windows_client
+ * [http://blog.pi3g.com/2013/08/using-the-raspberry-pi-as-cups-print-server-for-windows-and-apple-mac-airprint/]
+ * [http://www.howtogeek.com/169679/how-to-add-a-printer-to-your-raspberry-pi-or-other-linux-computer/]
+ * [https://wiki.archlinux.org/index.php/CUPS/Printer_sharing#Linux_server_-_Windows_client]
 
 ## Install the package
     sudo apt-get install cups
@@ -62,7 +62,7 @@ To fix certain cases of Bad Request then also add
 Navigate to http://{ip-address}:631 - and follow your nose. I am using an old Canon iP90. 
 In spite of there being a Canon PIXMA iP90 listed, I found that it didn't work and I had 
 to use the [Canon PIXMA iP2000](http://www.michaelwood.me.uk/blag/2008/01/30/canon-ip90-gnu-linux-ubuntu/) 
-even though this is January 2016.
+driver even though this is January 2016.
 
 ## Get it working in Windows
-See here for useful info [https://wiki.archlinux.org/index.php/CUPS/Printer_sharing#Linux_server_-_Windows_client]
+See [here](https://wiki.archlinux.org/index.php/CUPS/Printer_sharing#Linux_server_-_Windows_client) for useful info
