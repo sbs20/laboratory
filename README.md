@@ -11,8 +11,13 @@ This is what I'm running on:
  * Nano USB WiFi Dongle - Ralink RT5370 Chipset - driver=nl80211
  * Raspbian Jessie (2015-11-21)
 
-## Home
-Start reading [here](index.md)
+## Recipes
+1. [The basics](basics.md)
+2. [SMB client](smb-client.md)
+3. [Wireless access point](wireless-access-point.md)
+4. [DHCP / DNS server](dhcp-dns-server.md)
+5. [SANE Scanner Server](scanner-server.md)
+6. [CUPS Print Server](cups-print-server.md)
 
 ## Licensing
 I'm not completely sure there's anything all that worthy of note here - but for the avoidance
