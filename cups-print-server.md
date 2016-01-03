@@ -3,11 +3,6 @@ This has been covered in lots of different places - see references below.
 If you want to access the CUPS web console using a name rather than IP address then see the
 ServerAlias reference below.
 
-References
- * [http://blog.pi3g.com/2013/08/using-the-raspberry-pi-as-cups-print-server-for-windows-and-apple-mac-airprint/]
- * [http://www.howtogeek.com/169679/how-to-add-a-printer-to-your-raspberry-pi-or-other-linux-computer/]
- * [https://wiki.archlinux.org/index.php/CUPS/Printer_sharing#Linux_server_-_Windows_client]
-
 ## Install the package
     sudo apt-get install cups
 
@@ -65,4 +60,13 @@ to use the [Canon PIXMA iP2000](http://www.michaelwood.me.uk/blag/2008/01/30/can
 driver even though this is January 2016.
 
 ## Get it working in Windows
-See [here](https://wiki.archlinux.org/index.php/CUPS/Printer_sharing#Linux_server_-_Windows_client) for useful info
+See [here](https://wiki.archlinux.org/index.php/CUPS/Printer_sharing#Linux_server_-_Windows_client) for useful info.
+
+In short, though, follow the settings for IPP and use the IP address - unless you can figure out how
+to make windows play ball with nameservers
+
+## References
+ * [http://blog.pi3g.com/2013/08/using-the-raspberry-pi-as-cups-print-server-for-windows-and-apple-mac-airprint/]
+ * [http://www.howtogeek.com/169679/how-to-add-a-printer-to-your-raspberry-pi-or-other-linux-computer/]
+ * [https://wiki.archlinux.org/index.php/CUPS/Printer_sharing#Linux_server_-_Windows_client]
+
