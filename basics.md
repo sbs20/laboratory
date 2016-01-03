@@ -26,7 +26,7 @@ and then replace the following line
     127.0.1.1	raspberrypi
 
 ## Update your password
-passwd
+    passwd
 
 ## Network
 ### Network interfaces
@@ -36,7 +36,11 @@ passwd
     ip addr show eth0
 
 ### Bindings
-    netstat -ltunp | grep port
+    # All
+    netstat -ltunp
+    
+    # Just for port 631
+    netstat -ltunp | grep 631
 
 ## Updating packages
     sudo apt-get update
