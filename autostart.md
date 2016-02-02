@@ -40,4 +40,4 @@ Set permissions
 ```
     
 ## Then?
-If you need to add anything else to your startup, just add it to this script
+If you need to add anything else to your startup, just add it to this "start.sh" script
