@@ -6,9 +6,11 @@ My preference is the second way.
 [ipkg, putty, nano etc](basics.md)
 
 ## Edit the qpkg config file
+```
     nano /etc/config/qpkg.conf
-
+```
 Add a custom section something like
+```
     [start_custom]
     Name = start_custom
     Version = 0.1
@@ -18,17 +20,24 @@ Add a custom section something like
     Shell = /share/MD0_DATA/.init/start.sh
     Install_Path = /share/MD0_DATA/.init/
     Enable = TRUE
+```
 
 ## The start script
 The configuration above points to this...
+```
     nano /share/MD0_DATA/.init/start.sh
+```
 
 Enter the following (I am autostarting dnsmasq)
+```
     #!/opt/bin/bash
     /opt/etc/init.d/S56dnsmasq start
+```
 
 Set permissions
+```
     chmod 755 /share/MD0_DATA/.init/start.sh
+```
     
 ## Then?
 If you need to add anything else to your startup, just add it to this script
