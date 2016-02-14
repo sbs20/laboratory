@@ -17,22 +17,25 @@ to give clients with cached DNS entries a chance.
     sudo nano /etc/network/interfaces
 and make it look like the following. For more information about where to get network,
 broadcast and gateway addresses see here: http://www.modmypi.com/blog/tutorial-how-to-give-your-raspberry-pi-a-static-ip-address
-    auto lo
-    iface lo inet loopback
+```
+auto lo
+iface lo inet loopback
 
-    # The following line is important. Without it things don't work
-    # Not completely sure why. Consider investigating further.
-    auto eth0
-    iface eth0 inet static
-    address 192.168.0.2
-    netmask 255.255.255.0
-    network 192.168.0.0
-    broadcast 192.168.0.255
-    gateway 192.168.0.1
+# The following line is important. Without it things don't work
+# Not completely sure why. Consider investigating further.
+auto eth0
+iface eth0 inet static
+address 192.168.0.2
+netmask 255.255.255.0
+network 192.168.0.0
+broadcast 192.168.0.255
+gateway 192.168.0.1
+dns-nameservers 8.8.8.8
 
-    allow-hotplug wlan0
-    iface wlan0 inet manual
-        wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+allow-hotplug wlan0
+iface wlan0 inet manual
+wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+```
 
 ### Disable the dhcp client daemon config
 This is important because otherwise it will be requesting an address from itself
@@ -41,7 +44,9 @@ not very tidy.
     sudo nano /etc/dhcpcd.conf 
 and append the following line
     denyinterfaces *
-## Create files
+    
+    
+## Create and manage files
 ### dnsmasq.conf
 ```
 sudo nano /etc/dnsmasq.conf
@@ -118,7 +123,17 @@ dhcp-host=tau,192.168.0.3,infinite
     # This circumvents /etc/hosts having a 127.0.1.1 address - dnsmasq will
     # reply with THESE addresses instead
     192.168.0.2	pi
-    
+
+### /etc/resolv.conf
+I had some trouble getting name resoltion calls to work from the server itself.
+I did set the first line of resolv.conf to point at localhost but it still didn't
+work. I also added the google DNS servers to resolv.conf which works.... until you
+reboot. That is why the following line was added to /etc/network/interfaces
+
+```
+dns-nameservers 8.8.8.8
+```
+
 ## Service control commands
     sudo systemctl status dnsmasq.service
     sudo systemctl stop dnsmasq.service

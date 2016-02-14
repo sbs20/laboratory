@@ -9,6 +9,17 @@ Default username and password for raspbian are:
     username: pi
     password: raspberry
 
+## Filesystem
+### Expand filesystem
+You can do [this](http://raspberrypi.stackexchange.com/a/501) or take the easy option
+and ...
+```
+    sudo raspi-config
+```
+
+### Disk usage
+    sudo du -h --max-depth=1
+
 ## Reboot
     sudo reboot
 
@@ -45,3 +56,9 @@ and then replace the following line
 ## Updating packages
     sudo apt-get update
 
+### Get rid of Libreoffice
+Unless you need it it's just using up space
+
+```
+sudo apt-get remove --purge libreoffice*
+```
