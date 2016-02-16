@@ -62,3 +62,21 @@ Unless you need it it's just using up space
 ```
 sudo apt-get remove --purge libreoffice*
 ```
+
+## Working with a USB3.0 hub
+There is information here: https://www.raspberrypi.org/forums/viewtopic.php?f=28&t=53832 and
+here https://github.com/raspberrypi/firmware/issues/64
+
+Try doing an update
+```
+sudo rpi-update
+```
+But if that doesn't work then edit /boot/cmdline.txt and downgrade USB to 1.1. It is a space
+delimited set of value pairs
+```
+sudo nano /boot/cmdline.txt
+```
+And add the following to it:
+```
+dwc_otg.speed=1
+```
