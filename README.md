@@ -2,7 +2,7 @@
 ## Background and purpose
 The purposes of this project is to distil various tasks into simple easy to follow steps.
 No doubt the recipes could be automated; no doubt they appear elsewhere - I have credited
-references where appropriate - but I keep forgetting and losing links and it's annoying.
+references where appropriate - but I kept forgetting and losing links and it's annoying.
 So I started this project.
 
 ## Hardware and software
@@ -18,6 +18,10 @@ This is what I'm running on:
 4. [DHCP / DNS server](dhcp-dns-server.md)
 5. [SANE Scanner Server](scanner-server.md)
 6. [CUPS Print Server](cups-print-server.md)
+
+## Interesting recipes elsewhere
+1. [How-To: Raspberry Pi as a 3G/4G Router](http://www.g7smy.co.uk/?p=505)
+2. [Kodi on the Raspberry Pi](http://mymediaexperience.com/raspberry-pi-xbmc-with-raspbmc/)
 
 ## Licensing
 I'm not completely sure there's anything all that worthy of note here - but for the avoidance
