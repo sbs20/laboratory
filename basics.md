@@ -14,11 +14,14 @@ Default username and password for raspbian are:
 You can do [this](http://raspberrypi.stackexchange.com/a/501) or take the easy option
 and ...
 ```
-    sudo raspi-config
+sudo raspi-config
 ```
 
 ### Disk usage
-    sudo du -h --max-depth=1
+```
+sudo du -h --max-depth=1
+df -h
+```
 
 ## Reboot
     sudo reboot
