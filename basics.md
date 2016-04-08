@@ -64,6 +64,7 @@ Unless you need it it's just using up space
 
 ```
 sudo apt-get remove --purge libreoffice*
+sudo apt-get autoremove
 ```
 
 ## Working with a USB3.0 hub
