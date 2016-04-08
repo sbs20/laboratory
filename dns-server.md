@@ -36,7 +36,7 @@ You will need to edit the following files
 By default there doesn't appear to be a way of stopping dnsmasq. I created
 the following file which seems to work
 ```
-    nano /opt/etc/init.d K56dnsmasq
+    nano /opt/etc/init.d/K56dnsmasq
 ```
     
 Then paste this (it's a copy of S56dnsmasq without the "restart" lines)
