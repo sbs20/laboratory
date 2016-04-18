@@ -5,7 +5,7 @@ Please note - there appears to be a whole new qpkg with a nice GUI for dnsmasq.
 I have not tested it but it looks good: https://github.com/variab1e/dnsmasq-qpkg
 
 ## Prerequisites
-[ipkg, putty, nano etc](basics.md)
+[opkg, putty, nano etc](basics.md)
 
 ## Install
 

@@ -3,7 +3,7 @@ This has been documented [elsewhere](http://wiki.qnap.com/wiki/Running_Your_Own_
 My preference is the second way.
 
 ## Prerequisites
-[ipkg, putty, nano etc](basics.md)
+[opkg, putty, nano etc](basics.md)
 
 ## Edit the qpkg config file
 ```
