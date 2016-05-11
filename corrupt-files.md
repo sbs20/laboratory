@@ -14,6 +14,8 @@ I logged into a terminal and navigated to the directory in question
 rm: unable to stat `PackageLayout': Input/output error
 ```
 
+Checking the filesystem using the standard GUI did not fix the issue.
+
 ## *** This may signal the beginning of the end of your disks. BACKUP ***
 
 In my case I think it was a result of a catastrophic disk failure and a slightly unclean
@@ -29,6 +31,8 @@ yourself.
 
 You will almost certainly need to [unmount your shares](unmount-share.md) first.
 
+Run fsck (e2fsck on qnap) and use the -p switch which will automatically fix problems
+
 ```
 e2fsck_64 /dev/md0 -p
 ```
@@ -37,5 +41,3 @@ If that's not available then
 ```
 e2fsck /dev/md0 -p
 ```
-
-The -p swith will automatically fix problems. 
