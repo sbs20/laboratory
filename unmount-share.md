@@ -8,6 +8,14 @@ Information from here: http://forum.qnap.com/viewtopic.php?t=111944
 /etc/init.d/services.sh stop
 ```
 
+You may also need to...
+
+```
+/etc/init.d/smb.sh stop
+/etc/init.d/nfs stop
+/etc/init.d/QMediaService.sh stop
+```
+
 ## Unmount devices
 
 ```
@@ -21,7 +29,7 @@ umount: /share/MD0_DATA: device is busy
 umount: /share/MD0_DATA: device is busy
 ```
 
-## Check for the service, that will disturb the unmounting of /md0
+## Check for the service that is stopping the unmounting of /md0
 
 ```
 lsof +f -- /dev/md0
