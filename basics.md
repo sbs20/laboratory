@@ -23,7 +23,15 @@ opkg install nano
 ```
 
 ## Consider installing Optware anyway
-// TODO
+Optware is no longer supported - but it might still be better for you. Have a look
+[http://forum.qnap.com/viewtopic.php?t=111389](here) for more detail or just
+download the [package](http://download.qnap.com/QPKG/Optware_0.99.163.zip) and
+install it manually.
+
+You can find a list of packages for your architecture from the links below:
+
+(arm) http://qnapware.zyxmon.org/binaries-arm/Packages.html
+(x86) http://qnapware.zyxmon.org/binaries-x86/Packages.html
 
 Check ipkg installation by typing ipkg –version. Also see [using ipkg](http://wiki.qnap.com/wiki/Using_IPKG)
 Update pkgmgr

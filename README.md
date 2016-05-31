@@ -14,6 +14,8 @@ This is what I'm running on:
 2. [DHCP / DNS server](dns-server.md)
 3. [Autostart](autostart.md)
 4. [SANE Scanner Server](scanner-server.md)
+5. [Unmount share](unmount-share.md)
+6. [Corrupt files / rsync errors](corrupt-files.md)
 
 ## Licensing
 I'm not completely sure there's anything all that worthy of note here - but for the avoidance
