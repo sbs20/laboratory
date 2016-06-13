@@ -56,15 +56,27 @@ and then replace the following line
     # Just for port 631
     netstat -ltunp | grep 631
 
-## Updating packages
-    sudo apt-get update
-
+## Package management
+```
+sudo apt-get update
+apt-cache pkgnames | grep mono
+dpkg-query -l
+sudo apt-get upgrade
+apt-cache search packagename
+```
+    
 ### Get rid of Libreoffice
 Unless you need it it's just using up space
 
 ```
 sudo apt-get remove --purge libreoffice*
 sudo apt-get autoremove
+```
+
+## What version of linux am I running?
+Try:
+```
+uname -a
 ```
 
 ## Working with a USB3.0 hub
