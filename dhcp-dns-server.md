@@ -83,6 +83,12 @@ expand-hosts
 # Set the domain for dnsmasq. this is optional
 domain=your_domain.com
 
+# Do DHCP and Router Advertisements for this subnet. Set the A bit in the RA
+# so that clients can use SLAAC addresses as well as DHCP ones. This
+# seems to make a massive difference for Android 5.0 clients suffering from
+# the IPv6 lag https://www.reddit.com/r/Android/comments/2z1gyo/fix_lollipop_wifi_issues_and_coincidentally_the/
+dhcp-range=1234::2, 1234::500, slaac
+
 # Uncomment this to enable the integrated DHCP server, you need
 # to supply the range of addresses available for lease and optionally
 # a lease time.
