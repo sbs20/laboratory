@@ -65,13 +65,19 @@ sudo apt-get upgrade
 apt-cache search packagename
 ```
     
-### Get rid of Libreoffice
-Unless you need it it's just using up space
+Unless you need these they're just using up space
 
 ```
 sudo apt-get remove --purge libreoffice*
+sudo apt-get remove --purge wolfram-engine
+sudo apt-get remove --purge oracle-java8-jdk oracle-java7-jdk openjdk*
 sudo apt-get autoremove
 ```
+
+Also this: https://blog.samat.org/2015/02/05/slimming-an-existing-raspbian-install/
+
+### Reinstall raspi-config
+Then: https://github.com/snubbegbg/install_raspi-config
 
 ## What version of linux am I running?
 Try:
