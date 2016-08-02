@@ -65,6 +65,7 @@ sudo apt-get upgrade
 apt-cache search packagename
 ```
     
+### Get rid of packages
 Unless you need these they're just using up space
 
 ```
