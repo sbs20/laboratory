@@ -18,6 +18,9 @@ This is what I'm running on:
 4. [DHCP / DNS server](dhcp-dns-server.md)
 5. [SANE Scanner Server](scanner-server.md)
 6. [CUPS Print Server](cups-print-server.md)
+7. [Webcam](https://www.raspberrypi.org/documentation/usage/webcams/)
+8. [Sending emails](http://iqjar.com/jar/sending-emails-from-the-raspberry-pi/)
+9. [Cron](cron.md)
 
 ## Interesting recipes elsewhere
 1. [How-To: Raspberry Pi as a 3G/4G Router](http://www.g7smy.co.uk/?p=505)
