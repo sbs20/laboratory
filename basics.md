@@ -56,6 +56,11 @@ and then replace the following line
     # Just for port 631
     netstat -ltunp | grep 631
 
+## Timezone
+```
+sudo dpkg-reconfigure tzdata
+```
+
 ## Package management
 ```
 sudo apt-get update
