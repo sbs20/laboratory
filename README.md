@@ -16,7 +16,7 @@ This is what I'm running on:
 2. [SMB client](smb-client.md)
 3. [Wireless access point](wireless-access-point.md)
 4. [DHCP / DNS server](dhcp-dns-server.md)
-5. [SANE Scanner Server](scanner-server.md)
+5. [SANE Scanner Server](sane-scanner.md)
 6. [CUPS Print Server](cups-print-server.md)
 7. [Webcam](https://www.raspberrypi.org/documentation/usage/webcams/)
 8. [Sending emails](http://iqjar.com/jar/sending-emails-from-the-raspberry-pi/)
