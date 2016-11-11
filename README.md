@@ -13,7 +13,7 @@ This is what I'm running on:
 1. [The basics](basics.md)
 2. [DHCP / DNS server](dns-server.md)
 3. [Autostart](autostart.md)
-4. [SANE Scanner Server](scanner-server.md)
+4. [SANE Scanner Server](sane-scanner.md)
 5. [Unmount share](unmount-share.md)
 6. [Corrupt files / rsync errors](corrupt-files.md)
 
