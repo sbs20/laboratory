@@ -24,7 +24,8 @@ and replace it with:
     Port 631
 
 Then, scroll further down in the config file until you see the 
-location sections. Add the "Allow @local" lines:
+location sections. Add the "Allow @local" lines which allow
+requests from any device on the local network:
     
     <Location / >
         # Restrict access to the server...
