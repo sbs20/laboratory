@@ -4,8 +4,9 @@ your ethernet (eth0) and wireless (wlan0) which means that the wireless clients 
 be on the same network and using the same DHCP / DNS server as everything else.
 
 There are alternatives which create a separate network and rely on another DHCP server
-and NAT - but I think they're a bit over the top. See here if that sort of thing excites
-you: https://learn.adafruit.com/setting-up-a-raspberry-pi-as-a-wifi-access-point/
+and NAT - but I think they're a bit over the top.
+[See here](https://learn.adafruit.com/setting-up-a-raspberry-pi-as-a-wifi-access-point/)
+if that sort of thing excites you: 
 
 ## Update system
 ```
