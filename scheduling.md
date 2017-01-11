@@ -61,3 +61,5 @@ sudo systemctl enable backup.timer
 `journalctl --unit backup.timer`
 `journalctl -xe`
 
+`systemctl list-unit-files | grep enabled`
+`systemctl | grep running`
