@@ -8,13 +8,18 @@ sudo nano /bin/dropbox.py
 
 You may need to edit dropbox.py and repoint at python2
 
+## Error: echo fs.inotify.max_user_watches=100000
+
+If you get this error then
+[see here](http://stackoverflow.com/questions/35711897/dropbox-fs-inotify-error)
+to know more.
+
 echo fs.inotify.max_user_watches=131072 | sudo tee -a /usr/lib/sysctl.d/50-default.conf; sudo sysctl -p
 
-http://stackoverflow.com/questions/35711897/dropbox-fs-inotify-error
+## Arch linux....
 https://wiki.archlinux.org/index.php/dropbox#Starting_on_boot_with_systemd
 https://github.com/joeroback/dropbox/blob/master/dropbox%40.service
 
-find Dropbox/ -type f | wc -l
 
 
 ## Create a link in the Dropbox folder 
