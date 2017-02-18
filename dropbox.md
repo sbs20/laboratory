@@ -1,10 +1,12 @@
 # Dropbox
 http://www.dropboxwiki.com/tips-and-tricks/using-the-official-dropbox-command-line-interface-cli
 
-    sudo pacman -S python2
-    sudo nano /bin/dropbox.py
+```
+sudo pacman -S python2
+sudo nano /bin/dropbox.py
+```
 
-* repoint at python2
+You may need to edit dropbox.py and repoint at python2
 
 echo fs.inotify.max_user_watches=131072 | sudo tee -a /usr/lib/sysctl.d/50-default.conf; sudo sysctl -p
 
