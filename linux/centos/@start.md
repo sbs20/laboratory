@@ -19,3 +19,6 @@ to
 # How To Enable EPEL Repository
 `wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-9.noarch.rpm`
 `sudo rpm -ivh epel-release-7-9.noarch.rpm`
+
+# Set timezone
+https://www.cyberciti.biz/faq/centos-linux-6-7-changing-timezone-command-line/
