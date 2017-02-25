@@ -33,11 +33,3 @@ Found this: https://kb.vmware.com/selfservice/microsites/search.do?language=en_U
 
 http://www.howtogeek.com/97923/how-to-boot-a-vmware-virtual-machine-from-a-usb-drive/
 
-set hostname:
-from https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1010821
-`esxcli system hostname set --host=hostname`
-
-
-vSphere client
-https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=2089791
-
