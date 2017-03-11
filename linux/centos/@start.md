@@ -9,8 +9,7 @@ Change
 `ONBOOT=no`
 
 to
-`ONBOOT=no`
-
+`ONBOOT=yes`
 
 # Update all packages
 `sudo yum install nano wget`

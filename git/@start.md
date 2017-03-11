@@ -26,4 +26,9 @@ You'll be prompted for credentials. If you have 2FA enabled then
 
 ## Merging two repositories
 
+It's possible to do this and maintain version history. However,
+the remote repo that you're copying will end up in the root of
+the local one. So be careful of name collisions which cause git
+grief.
+
 http://stackoverflow.com/questions/13040958/merge-two-git-repositories-without-breaking-file-history/

@@ -21,3 +21,14 @@ web interface so it can be useful to have the native Windows client.
 Get it here:
 https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=2089791
 
+# Missing NTP servers
+[See here](https://communities.vmware.com/thread/505146?tstart=0) for more
+details but in short connect using the vSphere client:
+
+Host > Configuration > Time configuration > General > Options... > NTP Settings
+
+Add these three servers:
+
+0.it.pool.ntp.org
+1.it.pool.ntp.org
+2.it.pool.ntp.org 

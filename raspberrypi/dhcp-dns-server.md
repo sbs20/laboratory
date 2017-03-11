@@ -145,3 +145,8 @@ dns-nameservers 8.8.8.8
     sudo systemctl stop dnsmasq.service
     sudo systemctl start dnsmasq.service
     sudo systemctl restart dnsmasq.service
+
+# Split files
+
+wget http://malware-domains.com/files/domains.zip | unzip data.txt
+sudo bash -c "cat dnsmasq.core.conf dnsmasq-blacklist.conf > dnsmasq.conf"

@@ -1,4 +1,4 @@
-# Virtuality
+# Virtualisation
 As a developer I increasingly needed access to different operating
 environments for testing, experimentation, learning and generally
 mucking around. I'd outgrown just being able to tinker with Raspberry

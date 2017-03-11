@@ -12,3 +12,5 @@ firewalls, virtualisation and anything else that comes up.
 
   * [Linux](linux/@start.md)
   * [Virtualisation](virtualisation/readme.md)
+  * [Raspberry Pi](raspberrypi/README.md)
+  * [QNAP NAS](qnap/README.md)
