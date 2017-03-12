@@ -1,9 +1,7 @@
 # Imagemagick
-
 Install imagemagick
 
-# Convert PDF to other
-
+## Convert PDF to other
 `convert doc.pdf doc.jpg`
 
 If you get an error like
@@ -16,3 +14,10 @@ Then install ghostscript. See [here](https://www.imagemagick.org/discourse-serve
 
 e.g.
 `sudo apt-get install ghostscript`
+
+## Convert jpgs to multi-page PDF...
+Line up the jpgs you want, in name order of pages in a directory.
+
+`convert * output.pdf`
+
+Seriously easy!

@@ -1,10 +1,9 @@
 # Terminal image viewer
-`sudo pacman -S libcaca`
-
+Arch: `sudo pacman -S libcaca`
+Debian: `sudo apt-get install caca-utils`
 Ref: http://superuser.com/a/378787
 
 `cacaview myimage.jpg`
-`sudo pacman -S mplayer`
 
 # 7zip
 ```
@@ -19,3 +18,10 @@ sudo pacman -S p7zip
 # Extract
 7z e archive.7z ./
 ```
+
+# Network load
+`sudo pacman -S nload`
+
+# Bluetooth audio
+https://wiki.archlinux.org/index.php/Bluetooth_headset
+

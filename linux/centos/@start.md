@@ -11,11 +11,11 @@ Change
 to
 `ONBOOT=yes`
 
-# Update all packages
-`sudo yum install nano wget`
+# Packages
 `sudo yum update`
+`sudo yum install nano wget`
 
-# How To Enable EPEL Repository
+## How To Enable EPEL Repository
 `wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-9.noarch.rpm`
 `sudo rpm -ivh epel-release-7-9.noarch.rpm`
 

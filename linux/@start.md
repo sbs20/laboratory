@@ -1,10 +1,13 @@
 # Total basics
-If you need this then you may be better off not using Arch
+[Tutorial](http://www.ee.surrey.ac.uk/Teaching/Unix/)
 
- * [Tutorial](http://www.ee.surrey.ac.uk/Teaching/Unix/)
-
-# Network load
-    sudo pacman -S nload
+# Packages
+This documentation refers interchangebly between the various
+linux package managers, `yum`, `apt-get` and `pacman` according
+to which system I was using at the time. While bigger packages
+tend to have consistent names across distros this isn't always
+true... and certainly not for the smaller packages. Google will
+be your friend.
 
 # Time
 Show now
@@ -13,9 +16,3 @@ Show now
 Use network time
 `sudo timedatectl set-ntp true`
 `timedatectl status`
-
-# Bluetooth audio
-https://wiki.archlinux.org/index.php/Bluetooth_headset
-
-# Disable X server
-http://unix.stackexchange.com/a/264417
