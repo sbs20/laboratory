@@ -32,3 +32,6 @@ the local one. So be careful of name collisions which cause git
 grief.
 
 http://stackoverflow.com/questions/13040958/merge-two-git-repositories-without-breaking-file-history/
+
+## Migrating from SVN
+http://stackoverflow.com/questions/79165/how-to-migrate-svn-repository-with-history-to-a-new-git-repository
