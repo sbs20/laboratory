@@ -28,6 +28,7 @@ if prompted with theses error-messages:
 umount: /share/MD0_DATA: device is busy
 umount: /share/MD0_DATA: device is busy
 ```
+then ...
 
 ## Check for the service that is stopping the unmounting of /md0
 
