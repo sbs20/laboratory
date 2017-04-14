@@ -51,6 +51,11 @@ then you need to update `$mynetworks`_
 mynetworks = 127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128 192.168.0.3
 ```
 
+## Debug
+```
+sudo tail -f /var/log/syslog
+```
+
 # SSMTP
 Use ssmtp to send an email to a relay. It is not a daemon.
 
