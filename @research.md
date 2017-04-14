@@ -5,7 +5,7 @@ Environmental: https://www.modmypi.com/electronics/sensors/temperature-and-humid
 Automation: http://www.makeuseof.com/tag/getting-started-openhab-home-automation-raspberry-pi/
 
 ## Internal services
-SMTP relay, NTP? what else?
+NTP? what else?
 
 ## Server status and monitoring
  * Splunk: DNS, Windows, NAS
