@@ -51,6 +51,20 @@ sudo pacman -S p7zip
 # Network load
 `sudo pacman -S nload`
 
+# Torrent
+From: https://askubuntu.com/a/683468
+
+```
+sudo apt-get install deluge deluged deluge-console
+deluged
+deluge-console
+```
+You can then add torrents like:
+
+```
+add -p /user/Downloads your.torrent
+```
+
 # Bluetooth audio
 https://wiki.archlinux.org/index.php/Bluetooth_headset
 

@@ -22,6 +22,9 @@ NTP? what else?
 DNS : https://debian-administration.org/article/535/Blocking_ad_servers_with_dnsmasq
 http://stackoverflow.com/questions/9326438/dnsmasq-serve-different-ip-addresses-based-on-interface-used
 
+## Home server
+ * https://www.serversdirect.co.uk/p/1039108/hpe-proliant-microserver-gen8-intel-celeron-g1610t-dual-core-.30ghz-mb-4-x-non-hotplug-
+
 ## Router / firewall hardware
  * http://store.netgate.com/NetgateAPU2.aspx
  * http://blogs.cisco.com/smallbusiness/understanding-the-different-types-of-ethernet-switches?_ga=1.72774355.1172591880.1483960710
