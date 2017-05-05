@@ -9,6 +9,32 @@ Default username and password for raspbian are:
     username: pi
     password: raspberry
 
+## Change pi user
+Reference: https://serverfault.com/a/653514
+
+Create a new temp account with sudo rights:
+
+    sudo adduser temp
+    sudo adduser temp sudo
+
+Log out from your current account and back in with the temp account.
+
+Rename your username and directory:
+
+    sudo usermod -l new-username -m -d /home/new-username old-username
+
+Rename your username default's group:
+
+    sudo groupmod -n new-username old-username
+
+Log out from temp account and log back into your account with new-username.
+
+Remove temp account:
+
+    sudo userdel -r temp
+
+
+
 ## Filesystem
 ### Expand filesystem
 You can do [this](http://raspberrypi.stackexchange.com/a/501) or take the easy option
