@@ -21,6 +21,12 @@ to love itself and make itself more likeable.
 * http://superuser.com/a/1132250
 * https://www.howtoforge.com/tutorial/install-arch-linux-server/#step-install-the-ssh-server
 
+# Packages
+install foobar: `sudo pacman -S foobar`
+Remove foobar: `sudo pacman -Rs foobar`
+Update all: `sudo pacman -Syu`
+Purge unused: `sudo pacman -Sc`
+
 # Now install ssh server package:
 
 `pacman -S openssh`
@@ -28,10 +34,3 @@ to love itself and make itself more likeable.
 Enable the ssh service to start automatically when the system is booting:
 
 `systemctl enable sshd.service`
-
-# Install and remove
-`sudo pacman -S foobar`
-`sudo pacman -Rs foobar`
-`sudo pacman -Syu`
-
-
