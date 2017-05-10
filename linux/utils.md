@@ -68,3 +68,11 @@ add -p /user/Downloads your.torrent
 # Bluetooth audio
 https://wiki.archlinux.org/index.php/Bluetooth_headset
 
+# Handbrake
+```
+sudo apt-get install handbrake handbrake-cli
+```
+
+HandBrakeCLI -i VIDEO_TS -o movie.mp4 -e x264 -q 20 -B 160
+
+HandBrakeCLI -i input.ts -o movie.mkv -e x264 -q 20 -E copy:*
