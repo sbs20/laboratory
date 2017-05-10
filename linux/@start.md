@@ -37,3 +37,23 @@ and then replace the following line
 Your own: `passwd`
 
 Someone else's: `passwd <their-username>`
+
+# My favourite prompt
+
+Add this to .bashrc
+
+```
+export PS1='\[\e]0;\u@\h: \w\a\]\[\e[94m\][\[\e[92m\]\u\[\e[94m\] @ \[\e[1;97m\]\h\[\e[21;94m\]]: \[\e[93m\]\w\[\e[94m\]>\[\e[92m\]\$\[\e[0m\] '
+```
+
+
+or
+```
+export PS1='\[\e]0;\u@\h: \w\a\]\[\033[38;5;12m\][\[\]\[\033[38;5;10m\]\u\[\]\[\033[38;5;12m\]@\[\]\[\033[38;5;7m\]\h\[\]\[\033[38;5;12m\]]\[\]\[\033[38;5;15m\]: \[\]\[\033[93m\]\w\[\]\[\033[38;5;12m\]>\[\]\[\033[38;5;10m\]\$\[\]\[\033[38;5;15m\]\033[0m\[\] '
+
+export PS1='\[\e]0;\u@\h: \w\a\]\[\e[94m\][\[\]\[\e[92m\]\u\[\]\[\e[94m\]@\[\]\[\e[1;97m\]\h\[\]\[\e[21;94m\]]\[\]: \[\]\[\e[93m\]\w\[\]\[\e[94m\]>\[\]\[\e[92m\]\$\[\]\e[0m\[\] '
+```
+
+Then `source ~/.bashrc`
+
+[Reference](http://misc.flogisoft.com/bash/tip_colors_and_formatting)
