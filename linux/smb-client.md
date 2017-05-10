@@ -1,24 +1,26 @@
 # Set up as a CIFS / SMB client
 Reference here: http://geeks.noeit.com/mount-an-smb-network-drive-on-raspberry-pi/
 
-sudo nano ~/.smbcredentials
+```
+sudo apt-get install cifs-utils
+```
 
-## Create a stub folder to be your share location
-```
-sudo mkdir -p /mnt/public
-```
 ## If you're using account credentials...
 ```
 sudo nano ~/.smbcredentials
 ```
 Then enter the following:
 ```
-username:your_account_username
-password:your_account_password
+username=your_account_username
+password=your_account_password
 ```
 Update the permissions so that they're not visible to other users
 ```
 sudo chmod 600 ~/.smbcredentials
+```
+## Create a stub folder to be your share location
+```
+sudo mkdir -p /mnt/public
 ```
 ## Edit your fstab
 ```
