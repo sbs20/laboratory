@@ -4,6 +4,9 @@
 Environmental: https://www.modmypi.com/electronics/sensors/temperature-and-humidity-sensor-am2302-dht22
 Automation: http://www.makeuseof.com/tag/getting-started-openhab-home-automation-raspberry-pi/
 
+## .NET Core on RPi
+https://dotnetcorechris.github.io/dotnetcoreonraspberrypi.html
+
 ## Internal services
 NTP? what else?
 
