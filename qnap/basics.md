@@ -13,7 +13,8 @@ For any of the recipes here make sure you have at least followed these steps
     or [ARM](http://qnapware.zyxmon.org/binaries-arm/installer/Qnapware_0.90_arm-x19.qpkg).
  * Login to your NAS, load App Center and choose "Install manually".
 
-### Check and update Qnapware
+### Check and update Entware
+(You may need to restart your current shell in order to pick up the new $PATH)
 ```
 opkg -version
 opkg update
