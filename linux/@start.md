@@ -9,6 +9,23 @@ tend to have consistent names across distros this isn't always
 true... and certainly not for the smaller packages. Google will
 be your friend.
 
+# Sudo not found
+See [here for reference](https://www.cyberciti.biz/faq/debian-ubuntu-rhel-centos-linux-bash-sudo-command-not-found/)
+
+Change to root and install sudo e.g.
+
+```
+su - root
+apt-get install sudo
+```
+
+Add your user to the sudo group
+```
+usermod -aG sudo username
+``` 
+
+Log out and back in again
+
 # Time
 Show now
 ```
