@@ -54,6 +54,10 @@ To fix certain cases of Bad Request then also add
 
 See [here](https://bugs.launchpad.net/ubuntu/+source/cups/+bug/516018) for more details 
 
+## Restart service
+
+    sudo systemctl restart cups
+    
 ## Add your printer
 Navigate to http://{ip-address}:631 - and follow your nose. I am using an old Canon iP90. 
 In spite of there being a Canon PIXMA iP90 listed, I found that it didn't work and I had 
@@ -63,8 +67,7 @@ driver even though this is January 2016.
 ## Get it working in Windows
 See [here](https://wiki.archlinux.org/index.php/CUPS/Printer_sharing#Linux_server_-_Windows_client) for useful info.
 
-In short, though, follow the settings for IPP and use the IP address - unless you can figure out how
-to make windows play ball with nameservers
+In short, though, follow the settings for IPP and use the IP address - unless you can figure out how to make windows play ball with nameservers
 
 ## References
  * [http://blog.pi3g.com/2013/08/using-the-raspberry-pi-as-cups-print-server-for-windows-and-apple-mac-airprint/]
