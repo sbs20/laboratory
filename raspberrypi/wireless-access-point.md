@@ -88,10 +88,13 @@ iface br0 inet dhcp
 # denyinterfaces *
 # to the end of /etc/dhcpcd.conf
 #iface br0 inet static
-#address 192.168.0.4
+#address 192.168.0.20
+#dns-nameservers 8.8.4.4 8.8.8.8
 
 netmask 255.255.255.0
 gateway 192.168.0.1
+
+# Link eth and wlan
 bridge_ports eth0 wlan0
 ```
 ## 
