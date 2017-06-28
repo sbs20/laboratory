@@ -51,6 +51,13 @@ sudo pacman -S p7zip
 # Network load
 `sudo pacman -S nload`
 
+# Network scan
+```
+sudo apt-get install nmap
+nmap -sn 192.168.0.0/24
+sudo nmap -sU -p 137,5353 --script nbstat,dns-service-discovery 192.168.0.0/24
+```
+
 # Torrent
 From: https://askubuntu.com/a/683468
 
@@ -72,7 +79,8 @@ https://wiki.archlinux.org/index.php/Bluetooth_headset
 ```
 sudo apt-get install handbrake handbrake-cli
 ```
-
+Then
+```
 HandBrakeCLI -i VIDEO_TS -o movie.mp4 -e x264 -q 20 -B 160
-
 HandBrakeCLI -i input.ts -o movie.mkv -e x264 -q 20 -E copy:*
+```
