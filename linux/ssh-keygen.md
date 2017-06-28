@@ -7,6 +7,9 @@ Create the keys on your favourite client
 Copy the public keys to a remote server
 `ssh-copy-id user@remotehost.com`
 
+## Disable passwords
+Make sure you have tested SSH keys first!
+
 Disable password authentication for SSH on the remote server
 `sudo nano /etc/ssh/sshd_config`
 
