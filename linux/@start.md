@@ -60,7 +60,7 @@ Someone else's: `passwd <their-username>`
 Add this to .bashrc
 
 ```
-export PS1='\[\e]0;\u@\h: \w\a\]\[\e[94m\][\[\e[92m\]\u\[\e[94m\] @ \[\e[1;97m\]\h\[\e[21;94m\]]: \[\e[93m\]\w\[\e[94m\]>\[\e[92m\]\$\[\e[0m\] '
+export PS1='\[\e]0;\u@\h: \w\a\]\[\e[94m\][\[\e[92m\]\u\[\e[94m\] @ \[\e[1;97m\]\h\[\e[0;94m\]]: \[\e[93m\]\w\[\e[94m\]>\[\e[92m\]\$\[\e[0m\] '
 ```
 
 
