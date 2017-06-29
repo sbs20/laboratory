@@ -8,6 +8,8 @@ and take ownership of it. Please ensure that:
 1. You have disabled SSH by password
 1. You have disabled root by SSH access
 
+[More about SSH port forwarding](http://blog.trackets.com/2014/05/17/ssh-tunnel-local-and-remote-port-forwarding-explained-with-examples.html)
+
 ## Dynamic DNS
 * Register at the Dynamic DNS provider of your choosing. I chose [FreeDNS](https://freedns.afraid.org/)
 * Register a subdmain
@@ -17,6 +19,7 @@ and take ownership of it. Please ensure that:
 When you request this link, the DDNS service will associate the remote IP address (i.e. your external IP) with the subdomain.
 
 ## Install upnpc
+This is the program which asks your firewall to open a port
 ```
 sudo apt-get install miniupnpc
 ```
