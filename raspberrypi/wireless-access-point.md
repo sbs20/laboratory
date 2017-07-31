@@ -80,6 +80,7 @@ iface eth0 inet manual
 
 # bridge
 auto br0
+
 # Use this line if you're happy to run it on DHCP
 iface br0 inet dhcp
 
