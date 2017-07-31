@@ -25,6 +25,12 @@ Debian: `sudo service ssh restart`
 CentOS: `sudo service sshd restart`
 Arch:   `sudo systemctl restart sshd`
 
+## Bad IP address / hosts
+If you've changed the IP address of a host and you have the incorrect known_host then:
+```
+ssh-keygen -R host-or-ip
+```
+
 ## References
 https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server
 

@@ -33,7 +33,8 @@ then ...
 ## Check for the service that is stopping the unmounting of /md0
 
 ```
-lsof +f -- /dev/md0
+# lsof +f -- /dev/md0
+lsof | grep /md0
 ```
 
 In the list you will find one ore more PIDs - these must be killed: example, if the PID is '9924':
