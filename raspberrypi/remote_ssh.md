@@ -45,8 +45,26 @@ REMOTE_PORT=21122
 upnpc -e 'RPi SSH' -a $LOCAL_IP $LOCAL_PORT $REMOTE_PORT 'TCP' > /dev/null
 ```
 
+## fail2ban
+Install fail2ban. Institutes a firewall block if `x` fails occur in `y` seconds.
+This is well worth it. Even with private key authentication and a hidden port, some
+twat will keep trying. I configured 5 bad attempts in 60 seconds for a 15 minute ban.
+
+```
+sudo apt-get install fail2ban
+cd /etc/fail2ban
+sudo cp jail.conf jail.local
+sudo nano jail.conf
+```
+Change: `ignoreip`, `bantime` and `maxretry`
+
+Monitor current rules: `sudo iptables -L`
+
+
 ## References
 [Access your Raspberry Pi from Anywhere](https://pavelfatin.com/access-your-raspberry-pi-from-anywhere/)
+
+[fail2ban](https://www.digitalocean.com/community/tutorials/how-to-protect-ssh-with-fail2ban-on-debian-7)
 
 ## Tunnel to other machines
 * You are working on a remote device (X) with access to the internet
