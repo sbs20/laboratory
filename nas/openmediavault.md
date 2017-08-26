@@ -22,8 +22,8 @@ learned:
 ### Compatibility
   1. RAID needs a controller to mediate disk access.
   1. RAID controllers can be either hardware or software
-  1. Hardware RAID controllers are expensive. If you're reading this, then you're
-     probably more of the software RAID type.
+  1. Hardware RAID controllers are expensive. If you're reading this, then
+     you're probably more of the software RAID type.
   1. (A hardware RAID controller for the HP Proliant Servers costs ~$400)
   1. Software RAID is free and is used with less expensive, consumer grade
      devices. One such RAID controller is [mdadm](https://en.wikipedia.org/wiki/Mdadm)
