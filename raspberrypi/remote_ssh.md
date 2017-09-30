@@ -61,6 +61,10 @@ Change: `ignoreip`, `bantime` and `maxretry`
 Monitor current rules: `sudo iptables -L`
 
 
+## tmux
+Install and run [tmux](https://github.com/tmux/tmux/wiki) so that you can 
+reconnect if you get cut off. [Good primer](https://robots.thoughtbot.com/a-tmux-crash-course) 
+
 ## References
 [Access your Raspberry Pi from Anywhere](https://pavelfatin.com/access-your-raspberry-pi-from-anywhere/)
 

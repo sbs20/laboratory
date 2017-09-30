@@ -31,4 +31,9 @@ Add these three servers:
 
 0.it.pool.ntp.org
 1.it.pool.ntp.org
-2.it.pool.ntp.org 
+2.it.pool.ntp.org
+
+# Restart services
+
+SSH in and `services.sh restart`
+[See here](https://serverfault.com/questions/196928/cant-connect-to-esxi-with-vsphere-client)
