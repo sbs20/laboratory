@@ -1,7 +1,8 @@
 # Basics
-This outlines various common tasks which all rely on your having terminal access to your pi.
-If you don't have that then go and download PuTTY or something similar and then come back.
-If you've just got your Pi out of the box and vaguely know about linux then start here.
+This outlines various common tasks which all rely on your having terminal
+access to your pi. If you don't have that then go and download PuTTY or
+something similar and then come back. If you've just got your Pi out of
+the box and vaguely know about linux then start here.
 
 ## Inital login
 Default username and password for raspbian are:
@@ -37,8 +38,8 @@ Remove temp account:
 
 ## Filesystem
 ### Expand filesystem
-You can do [this](http://raspberrypi.stackexchange.com/a/501) or take the easy option
-and ...
+You can do [this](http://raspberrypi.stackexchange.com/a/501) or take the
+easy option and ...
 ```
 sudo raspi-config
 ```

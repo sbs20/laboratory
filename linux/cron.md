@@ -1,6 +1,6 @@
 # Cron
-Use cron for scheduling tasks. To manage tasks one needs to edit the crontab file. The
-best way to do this is:
+Use cron for scheduling tasks. To manage tasks one needs to edit the crontab
+file. The best way to do this is:
 
 ```
 crontab -e 

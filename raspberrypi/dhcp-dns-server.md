@@ -1,22 +1,25 @@
 # Setting up a DHCP / DNS server
-This is a simple DHCP and DNS server using dnsmasq. This allows you to reliably name your
-local network machines as well taking away control of DHCP from your router. You may want 
-to do this for a variety of reasons - whether just for the hell of it or because your ISP 
-keeps resetting your router - or because your ISP has crappy and unreliable DNS servers. 
-This fixes all of that.
+This is a simple DHCP and DNS server using dnsmasq. This allows you to
+reliably name your local network machines as well taking away control
+of DHCP from your router. You may want to do this for a variety of
+reasons - whether just for the hell of it or because your ISP keeps
+resetting your router - or because your ISP has crappy and unreliable
+DNS servers. This fixes all of that.
 
 ## Update packages and install dnsmasq
     sudo apt-get update
     sudo apt-get install dnsmasq
 
 ## Setting a static IP address
-You will want to do this to avoid having to rescan your network all the time and also
-to give clients with cached DNS entries a chance.
+You will want to do this to avoid having to rescan your network all
+the time and also to give clients with cached DNS entries a chance.
 
 ### Edit your interfaces files
     sudo nano /etc/network/interfaces
-and make it look like the following. For more information about where to get network,
-broadcast and gateway addresses see here: http://www.modmypi.com/blog/tutorial-how-to-give-your-raspberry-pi-a-static-ip-address
+
+and make it look like the following. For more information about where
+to get network, broadcast and gateway addresses see
+[here](http://www.modmypi.com/blog/tutorial-how-to-give-your-raspberry-pi-a-static-ip-address)
 ```
 auto lo
 iface lo inet loopback

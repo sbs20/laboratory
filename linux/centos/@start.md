@@ -22,4 +22,14 @@ sudo rpm -ivh epel-release-7-9.noarch.rpm
 ```
 
 # Set timezone
-https://www.cyberciti.biz/faq/centos-linux-6-7-changing-timezone-command-line/
+[Instructions](https://www.cyberciti.biz/faq/centos-linux-6-7-changing-timezone-command-line/)
+
+
+# Weird caret / cursor behaviour in nano in some terminals
+See [this](https://github.com/Microsoft/WSL/issues/1436) for details.
+
+In summary add this to .bashrc
+```
+stty sane
+export TERM=linux
+```
