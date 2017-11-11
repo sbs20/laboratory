@@ -11,15 +11,15 @@ My preference is the second way.
 ```
 Add a custom section something like
 ```
-    [start_custom]
-    Name = start_custom
-    Version = 0.1
-    Author = admin
-    Date = 2015-06-26
-    # The shell location needs to be somewhere available before share mounting takes place
-    Shell = /share/MD0_DATA/.init/start.sh
-    Install_Path = /share/MD0_DATA/.init/
-    Enable = TRUE
+[start_custom]
+Name = start_custom
+Version = 0.1
+Author = admin
+Date = 2015-06-26
+# The shell location needs to be somewhere available before mounting takes place
+Shell = /share/MD0_DATA/.init/start.sh
+Install_Path = /share/MD0_DATA/.init/
+Enable = TRUE
 ```
 
 ## The start script
@@ -40,4 +40,5 @@ Set permissions
 ```
     
 ## Then?
-If you need to add anything else to your startup, just add it to this "start.sh" script
+If you need to add anything else to your startup, just add it to this "start.sh"
+script

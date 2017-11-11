@@ -45,11 +45,29 @@ smtp_tls_security_level = encrypt
 smtp_tls_CAfile = /etc/ssl/certs/ca-certificates.crt
 ```
 
-_If you want to allow messages to be sent from your local network or specific machines
-then you need to update `$mynetworks`_
+_If you want to allow messages to be sent from your local network or specific
+machines then you need to update `$mynetworks`
+
 ```
 mynetworks = 127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128 192.168.0.3
 ```
+
+## Aliasing (forwarding)
+Add the following to `main.cf`
+```
+# Enable aliasing (overrides "alias_maps")
+virtual_alias_domains = mydomain.com
+virtual_alias_maps = hash:/etc/postfix/virtual
+```
+
+Now add `/etc/postfix/virtual`
+```
+# "Address you want to forward"   "Address to forward to"
+@example.com     me@gmail.com
+```
+
+You now have to build the virtual.db `sudo postmap /etc/postfix/virtual` then
+restart postfix
 
 ## Debug
 ```

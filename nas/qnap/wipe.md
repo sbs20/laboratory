@@ -1,11 +1,13 @@
 # Wiping data
 
 ## Linux / NAS
-Unmount the disks you want to wipe. If they're part of a RAID array you need to unmount the array. This may cause issues on a NAS
+Unmount the disks you want to wipe. If they're part of a RAID array you need to
+unmount the array. This may cause issues on a NAS
 
 `umount /dev/mdX` or `umount /dev/sdX`
 
-Then write a random stream of data to disk. Older systems have no means of showing progress (see docs on `dd`)
+Then write a random stream of data to disk. Older systems have no means of
+showing progress (see docs on `dd`)
 
 ```
 dd if=/dev/urandom of=/dev/sdc bs=1M

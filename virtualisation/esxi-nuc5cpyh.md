@@ -27,9 +27,10 @@ _TODO_
 
 ## What if I don't want to do all that?
 You'll get errors all over the place
-503 Service Unavailable (Failed to connect to endpoint: [N7Vmacore4Http16LocalServiceSpecE:0x1f075f20] _serverNamespace = / _isRedirect = false _port = 8309)
+503 Service Unavailable (Failed to connect to endpoint: 
+[N7Vmacore4Http16LocalServiceSpecE:0x1f075f20] _serverNamespace = / _isRedirect 
+= false _port = 8309)
+
 Found this: https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=2121043
 
-
 http://www.howtogeek.com/97923/how-to-boot-a-vmware-virtual-machine-from-a-usb-drive/
-

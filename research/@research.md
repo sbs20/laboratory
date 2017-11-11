@@ -13,6 +13,7 @@
 ## Networking
 ### Wifi
   * Mesh: http://www.linuxplanet.com/linuxplanet/tutorials/6758/1
+  * Mesh: https://www.open-mesh.org/projects/batman-adv/wiki/Quick-start-guide
   * Zero handoff
   * Roaming access points
   * Wifi virtualization

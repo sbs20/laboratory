@@ -57,4 +57,5 @@ And set permissions so it's executable
 ```
 
 ## Autostart
-You need to make this run when your device reboots. See [autostart](autostart.md).
+You need to make this run when your device reboots. See
+[autostart](autostart.md).

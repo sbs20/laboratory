@@ -37,7 +37,8 @@ then ...
 lsof | grep /md0
 ```
 
-In the list you will find one ore more PIDs - these must be killed: example, if the PID is '9924':
+In the list you will find one ore more PIDs - these must be killed: example,
+if the PID is '9924':
 
 ```
 kill 9924

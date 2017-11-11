@@ -27,3 +27,30 @@ After=... dnsmasq.service
 
 # Kodi behind a proxy
 [See here](https://github.com/xbmc/chorus2/issues/133)
+
+# Getting PHP working
+```
+sudo apt install php
+```
+
+Edit `/etc/nginx/sites-available/your_site.conf` and add:
+
+```
+    location ~ \.php$ {
+        fastcgi_split_path_info ^(.+\.php)(/.+)$;
+        # You may need to alter the following line according to your install
+        fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
+        fastcgi_index index.php;
+        include fastcgi_params;
+        fastcgi_param SCRIPT_FILENAME $document_root/$fastcgi_script_name;
+    }
+```
+Then restart nginx
+
+[Reference](https://askubuntu.com/a/134676)
+
+## Emailing with SSMTP
+Edit `/etc/php/7.0/fpm/php.ini` and set `sendmail_path = /usr/sbin/ssmtp -t`.
+You may need to restart php `sudo systemctl restart php7.0-fpm.service`. Then
+test: `php -r "mail('email@gmail.com', 'hello', 'hello from php');"`.
+
