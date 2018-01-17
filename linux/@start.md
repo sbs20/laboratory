@@ -2,12 +2,11 @@
 [Tutorial](http://www.ee.surrey.ac.uk/Teaching/Unix/)
 
 # Packages
-This documentation refers interchangebly between the various
-linux package managers, `yum`, `apt-get` and `pacman` according
-to which system I was using at the time. While bigger packages
-tend to have consistent names across distros this isn't always
-true... and certainly not for the smaller packages. Google will
-be your friend.
+This documentation refers interchangebly between the various linux package
+managers, `yum`, `apt-get` / `apt` and `pacman` according to which system I was
+using at the time. While bigger packages tend to have consistent names across
+distros this isn't always true... and certainly not for the smaller packages.
+Google will be your friend.
 
 # Sudo not found
 See [here for reference](https://www.cyberciti.biz/faq/debian-ubuntu-rhel-centos-linux-bash-sudo-command-not-found/)
@@ -38,17 +37,20 @@ Use network time
 
 # Changing the hostname
 You need to edit two files
-
-    sudo nano /etc/hostname
-
+```
+sudo nano /etc/hostname
+```
 replace `current-host-name` with your new device name
 
 In order to avoid "sudo: unable to resolve host" errors you will also need to edit your hosts file:
-
-    sudo nano /etc/hosts
+```
+sudo nano /etc/hosts
+```
 
 and then replace the following line
-    127.0.1.1	`current-host-name`
+```
+127.0.1.1	`current-host-name`
+```
 
 # Update password
 Your own: `passwd`
@@ -60,15 +62,28 @@ Someone else's: `passwd <their-username>`
 Add this to .bashrc
 
 ```
-export PS1='\[\e]0;\u@\h: \w\a\]\[\e[94m\][\[\e[92m\]\u\[\e[94m\] @ \[\e[1;97m\]\h\[\e[0;94m\]]: \[\e[93m\]\w\[\e[94m\]>\[\e[92m\]\$\[\e[0m\] '
+if [ -f "$HOME/.prompt" ]; then
+    . "$HOME/.prompt"
+fi
 ```
 
-
-or
+Then add this to `$HOME/.prompt`:
 ```
-export PS1='\[\e]0;\u@\h: \w\a\]\[\033[38;5;12m\][\[\]\[\033[38;5;10m\]\u\[\]\[\033[38;5;12m\]@\[\]\[\033[38;5;7m\]\h\[\]\[\033[38;5;12m\]]\[\]\[\033[38;5;15m\]: \[\]\[\033[93m\]\w\[\]\[\033[38;5;12m\]>\[\]\[\033[38;5;10m\]\$\[\]\[\033[38;5;15m\]\033[0m\[\] '
+title='\[\e]0;\u@\h: \w\a\]'
+bo='\[\e[96m\]['
+bc='\[\e[21;96m\]]'
+user='\[\e[92m\]\u'
+at='\[\e[96m\]@'
+host='\[\e[1;97m\]\h'
+path='\[\e[93m\]\w'
+arrow='\[\e[96m\]>'
+bang='\[\e[92m\]\$'
+clear='\[\e[0m\]'
 
-export PS1='\[\e]0;\u@\h: \w\a\]\[\e[94m\][\[\]\[\e[92m\]\u\[\]\[\e[94m\]@\[\]\[\e[1;97m\]\h\[\]\[\e[21;94m\]]\[\]: \[\]\[\e[93m\]\w\[\]\[\e[94m\]>\[\]\[\e[92m\]\$\[\]\e[0m\[\] '
+prompt="${title}${bo}${user} ${at} ${host}${bc}: ${path}${arrow} ${bang} ${clear}"
+#echo $prompt
+
+PS1=${prompt}
 ```
 
 Then `source ~/.bashrc`

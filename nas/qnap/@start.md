@@ -1,5 +1,6 @@
 # The basics
-For any of the recipes here make sure you have at least followed these steps
+For any of the [recipes](https://github.com/sbs20/laboratory/tree/master/nas/qnap)
+here make sure you have at least followed these steps
 
 ## Connect via SSH
 1. Enable SSH server

@@ -28,7 +28,7 @@ sudo rpm -ivh epel-release-7-9.noarch.rpm
 # Weird caret / cursor behaviour in nano in some terminals
 See [this](https://github.com/Microsoft/WSL/issues/1436) for details.
 
-In summary add this to .bashrc
+In summary add this to .bashrc (on the bad centos machine)
 ```
 stty sane
 export TERM=linux

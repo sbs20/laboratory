@@ -2,7 +2,7 @@
 
 ## "Failed to create a file system"
 I was trying to install on a disk which had an existing linux installation - 
-omv really didn't like it. When you get to the error, enter into shell:
+omv **really** didn't like it. When you get to the error, enter into shell:
 
 ```
 # Find the physical disk

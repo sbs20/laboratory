@@ -14,7 +14,7 @@ advantage is that this will be supported so long as Linux64 is supported.
 
 ## NAS firmware I looked at
   * [Rockstor](http://rockstor.com/): CentOS based. Free but with suggestions
-    to upgrade to paid. [More]http://opensourceforu.com/2016/01/rockstor-the-rockstar-among-nas-solutions/)
+    to upgrade to paid. [More](http://opensourceforu.com/2016/01/rockstor-the-rockstar-among-nas-solutions/)
   * [openmediavault](http://www.openmediavault.org/): Fork of FreeNAS on to
     Debian (rather than FreeBSD). Will even run on a Raspberry Pi
   * [FreeNAS](http://www.freenas.org/): Seems to be "the" one to have. BSD
