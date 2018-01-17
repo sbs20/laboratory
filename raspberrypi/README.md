@@ -13,14 +13,16 @@ This is what I'm running on:
 
 ## Recipes
 1. [The basics](basics.md)
-2. [SMB client](smb-client.md)
+2. [SMB client](../linux/smb-client.md)
 3. [Wireless access point](wireless-access-point.md)
-4. [DHCP / DNS server](dhcp-dns-server.md)
-5. [SANE Scanner Server](sane-scanner.md)
-6. [CUPS Print Server](cups-print-server.md)
+4. [DHCP / DNS server](../linux/dnsmasq.md)
+5. [SANE Scanner Server](https://github.com/sbs20/scanservjs)
+6. [CUPS Print Server](../linux/cups.md)
 7. [Webcam](https://www.raspberrypi.org/documentation/usage/webcams/)
 8. [Sending emails](http://iqjar.com/jar/sending-emails-from-the-raspberry-pi/)
-9. [Cron](cron.md)
+9. [Cron](../linux/cron.md)
+10. [Christmas tree](https://github.com/sbs20/xmas-pi)
+11. [Remote access](../linux/remote_ssh.md)
 
 ## Interesting recipes elsewhere
 1. [How-To: Raspberry Pi as a 3G/4G Router](http://www.g7smy.co.uk/?p=505)

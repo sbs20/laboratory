@@ -25,3 +25,15 @@ MAILTO="alerts@myaddress.com"
 # Disable ...
 MAILTO=""
 ```
+
+## cron-apt
+By default cron-apt only does "update" and not "upgrade". I think this is good.
+Basically, just install it e.g. `sudo apt cront-apt`. You then need to update
+`/etc/cron-apt/config` and include:
+
+```
+MAILON="upgrade"
+SYSLOGON="always"
+OPTIONS="-o Acquire::http::Dl-Limit=25"
+MAILTO="me@gmail.com"
+```

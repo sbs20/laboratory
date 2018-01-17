@@ -14,8 +14,7 @@ sudo apt-get update
 ```
 ## Get access point daemon and bridge-utils
 ```
-sudo apt-get install hostapd
-sudo apt-get install bridge-utils
+sudo apt-get install hostapd bridge-utils
 ```
 ## Shutdown wireless lan adapter in case it's running
 ```
@@ -44,6 +43,13 @@ wpa_key_mgmt=WPA-PSK
 wpa_pairwise=TKIP
 rsn_pairwise=CCMP
 bridge=br0
+```
+
+And add this if you're doing this on a Raspberry Pi 3
+```
+ieee80211n=1
+wmm_enabled=1
+ht_capab=[HT40][SHORT-GI-20][DSSS_CCK-40]
 ```
 
 ## Edit the access point startup

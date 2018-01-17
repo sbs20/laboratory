@@ -46,10 +46,10 @@ upnpc -e 'RPi SSH' -a $LOCAL_IP $LOCAL_PORT $REMOTE_PORT 'TCP' > /dev/null
 ```
 
 ## Fail2ban
-[See here](../linux/fail2ban.md)
+[See here](fail2ban.md)
 
 ## tmux
-[See here](../linux/tmux.md)
+[See here](tmux.md)
 
 ## References
 [Access your Raspberry Pi from Anywhere](https://pavelfatin.com/access-your-raspberry-pi-from-anywhere/)

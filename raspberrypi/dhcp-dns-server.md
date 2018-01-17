@@ -1,1 +1,0 @@
-[here](../linux/dnsmasq.md)

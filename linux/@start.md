@@ -74,3 +74,7 @@ export PS1='\[\e]0;\u@\h: \w\a\]\[\e[94m\][\[\]\[\e[92m\]\u\[\]\[\e[94m\]@\[\]\[
 Then `source ~/.bashrc`
 
 [Reference](http://misc.flogisoft.com/bash/tip_colors_and_formatting)
+
+# You have mail
+Use the `mail` command. Tutorial [here](http://www.johnkerl.org/doc/mail-how-to.html).
+But to delete all: `d*` then `q` to quit.
