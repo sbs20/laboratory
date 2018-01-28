@@ -17,7 +17,13 @@ sudo apt-get install handbrake handbrake-cli
 Then
 ```
 HandBrakeCLI -i VIDEO_TS -o movie.mp4 -e x264 -q 20 -B 160
-HandBrakeCLI -i input.ts -o movie.mkv -e x264 -q 20 -E copy:*
+HandBrakeCLI -i input.ts -o movie.mkv -e x264 -q 20 -E copy
+HandBrakeCLI -i input.ts -o output.mp4 --decomb -e x264 -q 20 -E copy --stop-at duration:20
+```
+
+Or
+```
+find . -name "*.ts" -exec HandBrakeCLI -i {} -o {}.mp4 --decomb -e x264 -q 20 -E copy \;
 ```
 
 ## ffmpeg

@@ -14,6 +14,18 @@ fdisk /dev/sdX
 
 Delete the partitions pressing `d` and enter
 
+## Problems clicking around in Firefox 57+
+This seems to be a "defect" in Firefox (quoted because I haven't investigated
+and could even be a correct implementation). This can be fixed with a change
+in Firefox settings:
+
+  * Open `about:config`
+  * Find "w3c\_touch\_events"
+  * Change `dom.w3c_touch_events.enabled` to value: `0`
+  * Refresh ExtJS 6 page. 
+
+[Reference](https://bugtracker.openmediavault.org/view.php?id=1871)
+
 ## Move QNAP NAS RAID disks to openmediavault 
 There is a bigger discussion here. I am no expert in RAID so you may find 
 better, more reliable witnesses than me. For what it's worth this is what I've
