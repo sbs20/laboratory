@@ -5,6 +5,13 @@ Reference here: http://geeks.noeit.com/mount-an-smb-network-drive-on-raspberry-p
 sudo apt-get install cifs-utils
 ```
 
+## Quick command line check
+
+```
+sudo apt install smbclient
+smbclient //server/path -U username
+```
+
 ## If you're using account credentials...
 ```
 sudo nano ~/.smbcredentials

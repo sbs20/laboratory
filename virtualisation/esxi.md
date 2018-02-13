@@ -1,4 +1,31 @@
-# Missing ethernet device after clone
+# ESXi
+
+## Install VMWare tools
+```
+sudo apt-get install open-vm-tools
+sudo systemctl start vmtoolsd.service
+sudo systemctl enable vmtoolsd.service
+```
+
+## Transfer VMs
+[Download ovftool](https://www.vmware.com/support/developer/ovf/)
+
+```
+ovftool -dm=thin vi://user@esxi1.example.com/<vmname>
+vi://user@esxi2.example.com
+```
+
+Debug with `--X:abc=xyz` e.g.
+
+```
+ovftool --X:logFile=ovf.log --X:logLevel=verbose -dm=thin vi://user@esxi1.example.com/<vmname>
+vi://user@esxi2.example.com
+```
+
+## Backup
+See here: http://www.virten.net/2016/04/backup-solutions-for-free-esxi/
+
+## Missing ethernet device after clone
 
 These pages are useful. Particularly the first. Notably...
 
@@ -15,7 +42,7 @@ See here:
   * https://blog.rabahi.net/?page_id=197
   * http://unix.stackexchange.com/questions/81834/how-can-i-change-the-default-ens33-network-device-to-old-eth0-on-fedora-19
 
-# Arch linux
+## Arch linux
 You will have used the standard VM converter to create a new VM.
 It will probably fail at 98%.
 

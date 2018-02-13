@@ -1,3 +1,17 @@
+# Add a disk
+```
+sudo fdisk -l
+sudo fdisk /dev/sdX
+```
+Create then write
+```
+sudo mkfs -t ext4 /dev/sdX1
+```
+Add the partition to /etc/fstab. E.g.
+```
+/dev/sdb1         /mnt/vms        ext4    defaults        0       0
+```
+
 # Extend LVM disk
 
 Set up with LVM and have /home in its own LVM
