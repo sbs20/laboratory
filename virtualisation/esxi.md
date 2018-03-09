@@ -49,10 +49,10 @@ It will probably fail at 98%.
 Create a new VM but re-use the disk
 This will probably fail to boot too...
 
-But see here: 
-https://wiki.archlinux.org/index.php/Moving_an_existing_install_into_(or_out_of)_a_virtual_machine#.22Waiting_10_seconds_for_device_.2Fdev.2Fsda1.3B_ERROR:_Unable_to_find_root_device_.27.2Fdev.2Fsda1.27.22
+Do this: 
+  * `e` at GRUB...
+  * Find and change `initramfs-linux.img` to `initramfs-linux-fallback.img`
+  * Login
+  * Then `sudo mkinitcpio -p linux`
 
-`e` at GRUB...
-change `initramfs-linux.img` to `initramfs-linux-fallback.img`
-then `mkinitcpio -p linux`
-
+[Reference](https://wiki.archlinux.org/index.php/Moving_an_existing_install_into_\(or_out_of\)_a_virtual_machine#.22Waiting_10_seconds_for_device_.2Fdev.2Fsda1.3B_ERROR:_Unable_to_find_root_device_.27.2Fdev.2Fsda1.27.22)
