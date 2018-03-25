@@ -36,10 +36,10 @@ sudo nano /etc/fstab
 Append lines this like
 ```
 # This uses a guest account
-//server_ip/Public /mnt/public cifs guest,uid=1000,gid=1000,iocharset=utf8 0 0
+//server_ip/Public /mnt/public cifs vers=2.0,guest,uid=1000,gid=1000,iocharset=utf8 0 0
 
 # This uses a credentials file
-//server_ip/Private /mnt/public cifs credentials=/home/pi/.smbcredentials,uid=1000,gid=1000,iocharset=utf8 0 0
+//server_ip/Private /mnt/public cifs vers=2.0,credentials=/home/pi/.smbcredentials,uid=1000,gid=1000,iocharset=utf8 0 0
 ```
 ## Then mount
 ```

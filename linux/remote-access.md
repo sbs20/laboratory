@@ -1,22 +1,27 @@
 # Remote / external access
 
-## !!! Warning !!!
-You are exposing your private network to the outside world. Please be aware of what you are doing
-and take ownership of it. Please ensure that:
+**!!! Warning !!!**
+You are exposing your private network to the outside world. Please be aware of
+what you are doing and take ownership of it. Please ensure that:
 
-1. You have configured [SSH authentication using keys](../linux/ssh-keygen.ssh)
-1. You have disabled SSH by password
-1. You have disabled root by SSH access
+  1. You have configured [SSH authentication using keys](../linux/ssh-keygen.ssh)
+  1. You have disabled SSH by password
+  1. You have disabled root by SSH access
 
 [More about SSH port forwarding](http://blog.trackets.com/2014/05/17/ssh-tunnel-local-and-remote-port-forwarding-explained-with-examples.html)
 
 ## Dynamic DNS
-* Register at the Dynamic DNS provider of your choosing. I chose [FreeDNS](https://freedns.afraid.org/)
-* Register a subdmain
-* Navigate to [Dynamic DNS](https://freedns.afraid.org/dynamic/)
-* Click the "Direct URL" link to get the URL required to update your subdomain. It will look something like: https://freedns.afraid.org/dynamic/update.php?abcdefghijklmnopqrstuvwxyz - copy this to use in the script below
+  * Register at the Dynamic DNS provider of your choosing. I chose
+    [FreeDNS](https://freedns.afraid.org/)
+  * Register a subdmain
+  * Navigate to [Dynamic DNS](https://freedns.afraid.org/dynamic/)
+  * Click the "Direct URL" link to get the URL required to update your
+    subdomain. It will look something like:
+    https://freedns.afraid.org/dynamic/update.php?abcdefghijklmnopqrstuvwxyz -
+    copy this to use in the script below
 
-When you request this link, the DDNS service will associate the remote IP address (i.e. your external IP) with the subdomain.
+When you request this link, the DDNS service will associate the remote IP
+address (i.e. your external IP) with the subdomain.
 
 ## Install upnpc
 This is the program which asks your firewall to open a port
@@ -25,7 +30,8 @@ sudo apt-get install miniupnpc
 ```
 
 ## Create a script
-Create a script file e.g. `nano configure_access.sh` and make it executable (chmod +x)
+Create a script file e.g. `nano configure_access.sh` and make it executable
+(`chmod +x`)
 ```
 #!/bin/bash
 
@@ -70,7 +76,11 @@ So if you run
 ssh -L 9001:192.168.0.10:443 user@server.example.com -p 2323
 ```
 
-Then you can think of this as connecting your local port 9001 to the remote network's 192.168.0.10:443; and you're SSHing into `user@server.example.com` on port 2323 to achieve it. Once you've SSHed then you can open a browser and navigate to `https://localhost:9001/` ... it will be as if you are on the remote network
+Then you can think of this as connecting your local port 9001 to the remote
+network's 192.168.0.10:443; and you're SSHing into `user@server.example.com` on
+port 2323 to achieve it. Once you've SSHed then you can open a browser and
+navigate to `https://localhost:9001/` ... it will be as if you are on the remote
+network
 
 ### Useful script to create tunnel 
 ```

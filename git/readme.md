@@ -1,5 +1,6 @@
 # Git
 
+## Basics
 ```
 # Clone a repo
 git clone https://github.com/sbs20/pi-recipes.git
@@ -23,6 +24,7 @@ git commit -m "Updated README" --author="sbs20 <you@domain.com>"
 # Sync
 git push origin master
 ```
+
 ## 2FA
 You'll be prompted for credentials. If you have 2FA enabled then
 [see here](http://stackoverflow.com/a/40166682/1229065)
@@ -33,6 +35,16 @@ git reset HEAD~
 ```
 
 [More here](https://stackoverflow.com/questions/927358/how-do-i-undo-the-last-commits-in-git)
+
+## Switch remote repo
+```
+# If it's the same repo
+git remote set-url origin https://example.com/repo.git
+
+# Alternatively
+git remote rm origin
+git remote add origin https://example.com/repo.git
+```
 
 ## Merging two repositories
 
