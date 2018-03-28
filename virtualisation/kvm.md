@@ -3,7 +3,7 @@
 Installing KVM and Kinchi on Ubuntu isn't straightforward. And nor is migrating
 VMs over from ESXi. Or rather, it isn't unless you've spent a few days trying.
 
-## Install on Ubuntu 17.10
+## Install QEMU on Ubuntu 17.10
 [Instructions for ubuntu 17.10](https://www.hiroom2.com/2017/11/30/ubuntu-1710-kvm-en/)
 
 ```
@@ -30,7 +30,7 @@ The user in libvirt group can run libvirt command without sudo
 sudo gpasswd libvirt -a <username>
 ```
 
-### Kimchi (web UI)
+## Kimchi (web UI)
 Then install [kimchi](https://github.com/kimchi-project/kimchi/releases/latest)
 
 But you have to do things in a particular way. Download the two `.deb` packages
@@ -49,6 +49,18 @@ sudo reboot now
 ```
 
 Then navigate to `https://<address>:8001`
+
+### Change SSL port
+Edit `/etc/nginx/conf.d/wok.conf` change `listen 0.0.0.0:8001 ssl;`, the
+`location / proxy_redirect` and the HTTP server rewrite.
+
+Then edit `/etc/wok/wok.conf`, uncomment `proxy_port = 8001` and change to `443`
+
+Finally
+```
+sudo systemctl restart wokd
+sudo systemctl restart nginx
+```
 
 ## Uninstall
 ```
@@ -138,6 +150,26 @@ virsh edit guest-name
 
 Find the `<graphics type='spice' ...` attribute and change spice to vnc. You might
 get some funny warnings about saving and XML validation. I just forced it through.
+
+## Rename VM
+
+```
+virsh dumpxml machine.example.com > machine.xml
+editor machine.xml
+```
+
+```xml
+<domain type='kvm' id='24'>
+  <name>machine-new.example.com</name>  <== edit the name here
+  <uuid>cadb89df-574e-ec7e-31fe-31a33d7934f5</uuid>
+```
+
+```
+virsh undefine machine.example.com
+virsh define machine.xml
+```
+
+[Reference](https://www.blunix.org/renaming-virtual-machine-domain-virsh/)
 
 ## References
   * [Ubuntu KVM hypervisor setup](http://www.ubuntuboss.com/ubuntu-server-16-04-as-a-hypervisor-using-kvm-and-kimchi-for-vm-management/)

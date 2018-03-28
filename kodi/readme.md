@@ -19,6 +19,9 @@ InputStream.Adaptive plugin needs to be manually enabled.
 
 Now install and enable the Netflix plugin.
 
+# Amazon (Kodi 18)
+[https://github.com/Sandmann79/xbmc](https://github.com/Sandmann79/xbmc)
+
 # Windows losing size with monitor recycle
 
 [Best description of the problem](https://forum.kodi.tv/showthread.php?tid=213851)

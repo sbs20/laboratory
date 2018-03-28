@@ -19,7 +19,10 @@ If you get this error then
 [see here](http://stackoverflow.com/questions/35711897/dropbox-fs-inotify-error)
 to know more.
 
-echo fs.inotify.max_user_watches=131072 | sudo tee -a /usr/lib/sysctl.d/50-default.conf; sudo sysctl -p
+```
+echo fs.inotify.max_user_watches=131072 | sudo tee -a /etc/sysctl.d/50-default.conf; sudo sysctl -p
+cat /proc/sys/fs/inotify/max_user_watches
+```
 
 ## Autostart
 
