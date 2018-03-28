@@ -6,7 +6,7 @@ Mount a remote filesystem with ssh.
 sudo apt install sshfs
 ```
 
-Then put something like this in `~/.profile`:
+Then tou can put something like this in `~/.profile`:
 ```
 # Mount drive
 if [ "$(mount | grep ' /home/user/data')" = "" ]; then
