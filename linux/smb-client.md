@@ -2,7 +2,7 @@
 Reference here: http://geeks.noeit.com/mount-an-smb-network-drive-on-raspberry-pi/
 
 ```
-sudo apt-get install cifs-utils
+sudo apt install cifs-utils
 ```
 
 ## Quick command line check
@@ -40,6 +40,9 @@ Append lines this like
 
 # This uses a credentials file
 //server_ip/Private /mnt/public cifs vers=2.0,credentials=/home/pi/.smbcredentials,uid=1000,gid=1000,iocharset=utf8 0 0
+
+# This just puts creds in clear text (at your own risk)
+//server_ip/Private /mnt/public cifs vers=2.0,username=user,password=pw,uid=1000,gid=1000,iocharset=utf8 0 0
 ```
 ## Then mount
 ```
