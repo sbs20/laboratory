@@ -17,6 +17,14 @@ media_dir=V,/media/Television
 friendly_name=MyNewDLNAServer
 ```
 
+The database is stored in `/var/cache/minidlna/files.db`.
+
+To rebuild the datbase:
+```
+sudo minidlnad -R
+sudo systemctl restart minidlna
+```
+
 ## Console Client
 Use `djmount`.
 
