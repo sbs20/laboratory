@@ -23,7 +23,6 @@ Now install and enable the Netflix plugin.
 [https://github.com/Sandmann79/xbmc](https://github.com/Sandmann79/xbmc)
 
 # Windows losing size with monitor recycle
-
 [Best description of the problem](https://forum.kodi.tv/showthread.php?tid=213851)
 but also [here](https://forum.kodi.tv/showthread.php?tid=158432) and
 [here](http://www.overclock.net/t/1235582/dealing-with-displayport-hdmi-autodetect) and
@@ -48,3 +47,21 @@ Specifically:
   1. If using Launcher4Kodi - use Windows Explorer as the shell
   1. Put RestoreWindows (or a shortcut) in the Startup folder (`win-r` then `shell:startup`)
   1. Use Display Mode: Full Screen, set correct resolution and "Use fullscreen window" = True
+
+# LibreElec
+
+## Reset library
+```
+rm /storage/.kodi/userdata/Database/MyVideo*.db
+```
+
+## Disable SSH password
+```
+echo 'SSHD_DISABLE_PW_AUTH="true"' > /storage/.cache/services/sshd.conf
+systemctl restart sshd
+```
+
+## Hostname
+```
+echo "picard" > /storage/.cache/hostname
+```

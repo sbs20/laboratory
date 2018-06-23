@@ -61,3 +61,9 @@ Links:
   * http://store.netgate.com/NetgateAPU2.aspx
   * http://blogs.cisco.com/smallbusiness/understanding-the-different-types-of-ethernet-switches?_ga=1.72774355.1172591880.1483960710
   * Or SA520. Upgrade to ASA5506-X - but not at that price
+
+### Low power Arm CPUs
+  * [ODROID HC2](https://www.odroid.co.uk/ODROID-HC2) and [discussion](https://forum.armbian.com/topic/4983-odroid-hc1-hc2/)
+  * [NanoPi](http://www.friendlyarm.com/index.php?route=product/product&product_id=180&search=nanopi+neo2&description=true&category_id=0&sub_category=true)
+  * [Helios4](https://kobol.io/helios4/)
+  * https://forum.openmediavault.org/index.php/Thread/19871-Which-energy-efficient-ARM-platform-to-choose/?postID=154980#post154980

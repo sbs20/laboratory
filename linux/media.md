@@ -59,3 +59,9 @@ ffmpeg -i file.mpg -crf 23 -c:a aac -vf yadif "file.mkv"
 ```
 
 [Useful reference](https://superuser.com/a/550764/682739)
+
+# ffmpeg and location data
+
+ffmpeg doesn't seem to respect geo data when copying. More
+[here](https://superuser.com/a/996278/682739) and
+[here](https://stackoverflow.com/q/47314534/1229065)

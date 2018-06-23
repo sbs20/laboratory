@@ -32,7 +32,7 @@ sudo apt-get install miniupnpc
 ## Create a script
 Create a script file e.g. `nano configure_access.sh` and make it executable
 (`chmod +x`)
-```
+```bash
 #!/bin/bash
 
 # Register myself with FreeDNS - use your direct URL from above
@@ -83,7 +83,7 @@ navigate to `https://localhost:9001/` ... it will be as if you are on the remote
 network
 
 ### Useful script to create tunnel 
-```
+```bash
 #!/bin/bash
 # By default only bind the tunnel to the loopback address
 LOCAL_HOST_PORT=9001
