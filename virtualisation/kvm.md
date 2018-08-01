@@ -3,6 +3,15 @@
 Installing KVM and Kinchi on Ubuntu isn't straightforward. And nor is migrating
 VMs over from ESXi. Or rather, it isn't unless you've spent a few days trying.
 
+## Quick reference
+```
+virsh list --all
+virsh shutdown machine.example.com
+virsh start machine.example.com
+virsh edit machine.example.com
+virsh undefine machine.example.com
+```
+
 ## Install QEMU on Ubuntu 17.10
 [Instructions for ubuntu 17.10](https://www.hiroom2.com/2017/11/30/ubuntu-1710-kvm-en/)
 
