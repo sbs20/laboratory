@@ -34,7 +34,9 @@ You'll be prompted for credentials. If you have 2FA enabled then
 git reset HEAD~
 ```
 
-[More here](https://stackoverflow.com/questions/927358/how-do-i-undo-the-last-commits-in-git)
+  * [Undo last commit](https://stackoverflow.com/questions/927358/how-do-i-undo-the-last-commits-in-git)
+  * [How to undo more or less anything](https://blog.github.com/2015-06-08-how-to-undo-almost-anything-with-git/)
+  * [Delete local branch and get from server](https://stackoverflow.com/a/9210786)
 
 ## Switch remote repo
 ```
