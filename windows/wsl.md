@@ -31,3 +31,11 @@ You'll find out where ubuntu (or your distro) is installed somewhere in
 ## Windows interoperability
 
 https://docs.microsoft.com/en-us/windows/wsl/interop
+
+## Mounting drives
+
+```
+sudo mount -t drvfs '\\server\share' /mnt/share
+```
+
+[Reference](https://blogs.msdn.microsoft.com/wsl/2017/04/18/file-system-improvements-to-the-windows-subsystem-for-linux/)
