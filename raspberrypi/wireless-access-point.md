@@ -10,11 +10,11 @@ if that sort of thing excites you:
 
 ## Update system
 ```
-sudo apt-get update
+sudo apt update
 ```
 ## Get access point daemon and bridge-utils
 ```
-sudo apt-get install hostapd bridge-utils
+sudo apt install hostapd bridge-utils
 ```
 ## Shutdown wireless lan adapter in case it's running
 ```
